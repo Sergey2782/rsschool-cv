@@ -22,3 +22,12 @@
 * Bootstrap 3; 4  
 
 ---
+
+### Education
+
+* College of Education and Social Relations, Slobodskoy city, Kirov region.2008 Management.
+
+ ---
+
+### English
+ My level of English is _A2_
