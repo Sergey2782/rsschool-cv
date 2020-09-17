@@ -13,3 +13,12 @@
 
  ---
 
+### Skills
+* HTML
+* CSS
+* JS basic knowledge 
+* NPM
+* SASS
+* Bootstrap 3; 4  
+
+---
