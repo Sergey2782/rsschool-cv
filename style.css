@@ -1,0 +1,26 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333940;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+	padding: 0 20px;
+    margin: 0 auto;
+	max-width: 1024px;
+}
