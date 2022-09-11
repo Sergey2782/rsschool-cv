@@ -5,11 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <main>
-    </main>
-    <footer></footer>
+    <nav class="nav">
+        <ul class="ul_nav display-none-mobile" nav-elem> 
+            <li nav-elem>
+                <a href="https://rs.school/js/" class="logo_rs_school" target="_blank" nav-elem><img src="logo_rs_school_js.svg" alt="logo" nav-elem></a>
+            </li>
+            <li class="nav_item" nav-elem>
+                <a href="#about-me" data-tooltip="Hello,i'm beginner,<br>See you soon and <br>good coding for you bro" nav-elem>About me</a>
+            </li>
+            <li class="nav_item" nav-elem>
+                <a href="#projects" data-tooltip="Hello,i'm beginner,<br>See you soon and <br>good coding for you bro" nav-elem>Projects</a>
+            </li>
+            <li class="nav_item" nav-elem>
+                <a href="#scills" data-tooltip="Hello,i'm beginner,<br>See you soon and <br>good coding for you bro" nav-elem>Scills</a>
+            </li>
+            <li class="nav_item" nav-elem>
+                <a href="#code" data-tooltip="Hello,i'm beginner,<br>See you soon and <br>good coding for you bro" nav-elem>Code</a>
+            </li>
+        </ul>
+        <a href="https://rs.school/js/" class="logo_rs_school logo-small-device display-none-only-desktop" target="_blank">
+            <img src="logo_rs_school_js.svg" alt="logo">
+        </a>
+        <button type="button" class="open-btn display-none-only-desktop">
+            <img src="hamburger-menu.svg" alt="open-btn" class="op-btn">
+        </button>
+        <button type="button" class="close-btn display-none">
+            <img src="close_line_mobile_burger.svg" alt="close-btn" class="cl-btn">
+        </button>
+    </nav>
+    <div class="main border-top">
+        <header>
+            <div class="avatar_block">
+                <h1>Sergei Malkov</h1>
+                <img src="photo.jpg" class="main_photo" alt="my-photo">
+            </div>
+            <h2>Contacts</h2>
+            <ul class="list_contacts">
+                <li>
+                    <a href="tel:+79042045904" class="phone">+79042045904</a>
+                </li>
+                <li>
+                    <a href="mailto:msergun234@gmail.com">
+                        <div>
+                            <img src="email.gif" class="email-link" alt="email-gif">
+                            <span>msergun234@gmail.com</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="telegram-btn" target="_blank">
+                        <img src="fly.png" alt="fly-tg">
+                        @SerhioSergo
+                    </a>
+                </li>
+            </ul>
+            <hr>
+        </header>
+        <main>
+            <h2 id="about-me">Summary</h2>
+            <p>I studied Front-End Development as a hobby. Now i really want to develop and move forward in<br>
+            programming. I study hard and learn new materials fast. Also, I love music, sport and travel.<br>
+            I play the guitar very well.</p><hr>
+            <h2 id="code">Code</h2>
+            <pre><code>const url = `https://api.unsplash.com/photos/query = ${imgTagInput.value}`;
+            const res = await fetch(url);
+            const data = await res.json();
+            if(data.errors == 'No photos found.') {
+                tooltipError('add correct \n tag name', imgTagInput);
+                return;
+            }</code></pre>
+            <hr>
+            <h2 id="projects">Projects</h2>
+            <div class="container-projects">
+                <div class="wrapper-proj-item">
+                    <div class="projects_item proj-item-1">
+                        <a href="https://sergey2782momentum.netlify.app/" target="_blank">momentum</a>
+                        <span>momentum</span>
+                    </div>
+                </div>
+                <div class="wrapper-proj-item">
+                    <div class="projects_item proj-item-2">
+                        <a href="https://rolling-scopes-school.github.io/sergey2782-JSFEPRESCHOOL2022Q2/travel/" target="_blank">travel</a>
+                        <span>travel</span>
+                    </div>
+                </div>
+                <div class="wrapper-proj-item">
+                    <div class="projects_item proj-item-3">
+                        <a href="https://sergey2782.github.io/life-is-music/" target="_blank">music</a>
+                        <span>music</span>
+                    </div>
+                </div>
+                <div class="wrapper-proj-item">
+                    <div class="projects_item proj-item-4">
+                        <a href="https://sergey2782.github.io/Image-Gallery/" target="_blank">gallery</a>
+                        <span>gallery</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <h2 id="scills">Skills</h2>
+            <ul class="list_scills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS basic knowledge</li>
+                <li>GIT</li>
+                <li>NPM</li>
+                <li>SASS</li>
+                <li>Bootstrap 3; 4</li>
+            </ul>
+            <hr>
+            <h2>Education</h2>
+            <p>College of Education and Social Relations, Slobodskoy city, Kirov region.2008 Management</p>
+            <hr>
+            <h2>English</h2>
+            <p>My level of English is A2</p>
+        </main>
+    </div>
+    <footer>
+        <a href="https://github.com/Sergey2782/" class="logo_git_hub" target="_blank">
+            <span class="anime-g">G</span>
+            <span class="anime-it">IT</span>
+            <span class="anime-hub">HUB</span>
+        </a>
+        <p>2022</p>
+        <a href="https://rs.school/js/" class="logo_rs_school">
+            <img src="logo_rs_school_js.svg" alt="logo">
+        </a>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>
